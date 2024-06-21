@@ -16,6 +16,9 @@ function atualizarHora() {
     
     // Atualiza o elemento HTML com a hora formatada
     document.getElementById('date').textContent = `${data} - ${horaFormatada}`;
+    document.body.style.background="red"
+    document.body.style.color="white"
+    document.body.style.fontSize="2rem"
 }
 
 // Chama a função inicialmente para evitar atrasos no primeiro segundo
