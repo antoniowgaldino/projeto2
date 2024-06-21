@@ -18,7 +18,7 @@ function atualizarHora() {
     document.getElementById('date').textContent = `${data} - ${horaFormatada}`;
     document.body.style.background="red"
     document.body.style.color="white"
-    document.body.style.fontSize="2rem"
+    // document.body.style.fontSize="2rem"
 }
 
 // Chama a função inicialmente para evitar atrasos no primeiro segundo
@@ -26,3 +26,11 @@ atualizarHora();
 
 // Atualiza a cada segundo
 setInterval(atualizarHora, 1000);
+
+
+
+function alteraNome(){
+    let alteracao = document.getElementById('alteracao')
+    alteracao.innerText=alteracao.innerText.toUpperCase()
+}
+alteraNome()
